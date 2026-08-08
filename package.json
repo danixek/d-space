@@ -1,0 +1,17 @@
+{
+  "name": "d-space",
+  "version": "1.0.0",
+  "description": "> **Web Application Architecture & Digital Space**  \r > Koncept rozšiřitelné aplikace a rozcestníku pod jednotnou brand hlavičkou.",
+  "main": "index.js",
+  "scripts": {
+    "scss:build": "dotnet msbuild dev/dev.csproj /t:CompileScss",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.90.0"
+  }
+}

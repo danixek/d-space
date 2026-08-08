@@ -1,0 +1,42 @@
+:root {
+  --primary-color: #212529;
+  --secondary-color: #343a40;
+  --gallery-border-color: rgb(60, 60, 60);
+  --gallery-background-color: rgb(40, 40, 40);
+}
+
+.theme-darker {
+  --primary-color: #121212;
+  --secondary-color: #222;
+}
+
+.theme-softlight {
+  --primary-color: #373737;
+  --secondary-color: #505050;
+}
+
+body {
+  --bs-success: rgb(23, 73, 23) !important;
+
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: Arial, sans-serif;
+  background-color: var(--primary-color);
+  color: #f8f9fa;
+}
+
+
+.bg-light-gray {
+  background-color: var(--secondary-color);
+  color: rgb(220, 220, 220);
+  padding: 60px 0 !important;
+}
+
+.bg-dark-gray {
+  background-color: var(--primary-color);
+  padding: 60px 0 !important;
+}
+
+.bg-dark {
+  background-color: var(--primary-color) !important;
+}

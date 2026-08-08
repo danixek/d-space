@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Project>
+  <PropertyGroup>
+    <WebPublishMethod>MSDeploy</WebPublishMethod>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <SiteUrlToLaunchAfterPublish>http://d-space.runasp.net/</SiteUrlToLaunchAfterPublish>
+    <LaunchSiteAfterPublish>true</LaunchSiteAfterPublish>
+    <ExcludeApp_Data>false</ExcludeApp_Data>
+    <ProjectGuid>b83daf27-b040-44b6-bb11-f52aeb839e23</ProjectGuid>
+    <MSDeployServiceURL>YOUR_SERVER_NAME.siteasp.net</MSDeployServiceURL>
+    <DeployIisAppPath>YOUR_SERVER_NAME</DeployIisAppPath>
+    <RemoteSitePhysicalPath />
+    <SkipExtraFilesOnServer>true</SkipExtraFilesOnServer>
+    <MSDeployPublishMethod>WMSVC</MSDeployPublishMethod>
+    <EnableMSDeployBackup>true</EnableMSDeployBackup>
+    <EnableMsDeployAppOffline>true</EnableMsDeployAppOffline>
+    <UserName>YOUR_USERNAME</UserName>
+    <_SavePWD>true</_SavePWD>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,49 @@
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  opacity: 0.95;
+  height: 60px;
+  background-color: var(--secondary-color) !important;
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+
+    color: #eeeeee;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #ffffff;
+
+      .logo-img {
+        filter: grayscale(100%) brightness(0.8);
+      }
+    }
+  }
+
+  .navbar-nav {
+    background-color: var(--secondary-color) !important;
+
+    .nav-link {
+      color: #f8f9fa;
+
+      &:hover {
+        color: #d1d5db;
+      }
+    }
+  }
+}
+
+.logo-img {
+  width: 25px;
+  height: auto;
+  display: block;
+  margin-left: 10px;
+
+  transition: filter 0.3s ease;
+}
