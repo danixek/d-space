@@ -6,14 +6,14 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
     <ItemGroup>
-        <ScssFiles Include="Pages\**\*.cshtml.scss" />
+        <ScssFiles Include="wwwroot\scss\site.scss" />
     </ItemGroup>
 
     <Target Name="CompileScss"
             BeforeTargets="Build"
             Inputs="@(ScssFiles)"
-            Outputs="@(ScssFiles->'%(RelativeDir)%(Filename).css')">
+            Outputs="@(ScssFiles->'wwwroot\\css\\%(Filename).css')">
         <Message Text="Kompiluji SCSS soubory..." Importance="high" />
-        <Exec Command="npx sass --no-source-map &quot;%(ScssFiles.Identity)&quot; &quot;%(ScssFiles.RelativeDir)%(ScssFiles.Filename).css&quot;" />
+        <Exec Command="npx sass --no-source-map &quot;%(ScssFiles.Identity)&quot; &quot;wwwroot\css\%(ScssFiles.Filename).css&quot;" />
     </Target>
 </Project>

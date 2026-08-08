@@ -17,14 +17,12 @@
 
 body {
   --bs-success: rgb(23, 73, 23) !important;
-
   margin: 0;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-family: Arial, sans-serif;
   background-color: var(--primary-color);
   color: #f8f9fa;
 }
-
 
 .bg-light-gray {
   background-color: var(--secondary-color);

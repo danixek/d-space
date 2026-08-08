@@ -11,15 +11,12 @@
   .navbar-brand {
     display: flex;
     align-items: center;
-
     color: #eeeeee;
     text-decoration: none;
-
     transition: color 0.3s ease;
 
     &:hover {
       color: #ffffff;
-
       .logo-img {
         filter: grayscale(100%) brightness(0.8);
       }
@@ -44,6 +41,5 @@
   height: auto;
   display: block;
   margin-left: 10px;
-
   transition: filter 0.3s ease;
 }
