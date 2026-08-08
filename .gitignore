@@ -6,3 +6,7 @@ riderModule.iml
 /_ReSharper.Caches/
 dev/Pages/**/*.cshtml.css
 dev/Pages/**/*.cshtml.css.map
+.idea/
+.vs/
+*.csproj.user
+*.pubxml.user
