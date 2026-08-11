@@ -1,0 +1,49 @@
+.offcanvas {
+  display: flex;
+  flex-direction: column;
+
+  width: 15em !important;
+
+  background-color: #222;
+  color: #fff;
+}
+
+.offcanvas-brand {
+  width: 100%;
+  padding: 0.2em 0;
+
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+.offcanvas-label {
+  padding: 1em 0 0.2em 1em;
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.offcanvas-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.offcanvas-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 0 1em 2em;
+
+  &:hover {
+    background-color: #151515;
+    color: #fff;
+  }
+}
+
+.offcanvas-actions {
+  margin-top: auto;
+}

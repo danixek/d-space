@@ -10,7 +10,7 @@ if (savedTheme && themes.includes(savedTheme)) {
     applyTheme('dark'); // výchozí
 }
 
-document.getElementById('theme-toggle').addEventListener('click', () => {
+document.getElementById('navbar-color-mode').addEventListener('click', () => {
     currentThemeIndex = (currentThemeIndex + 1) % themes.length;
     const nextTheme = themes[currentThemeIndex];
     applyTheme(nextTheme);

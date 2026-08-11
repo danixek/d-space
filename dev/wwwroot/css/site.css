@@ -16,74 +16,209 @@
 }
 
 body {
-  --bs-success: rgb(23, 73, 23) !important;
-  margin: 0;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-family: Arial, sans-serif;
   background-color: var(--primary-color);
   color: #f8f9fa;
 }
 
-.bg-light-gray {
+.content-sections > section {
+  padding: 60px 0;
+  width: 100%;
+}
+.content-sections > section:nth-of-type(odd) {
   background-color: var(--secondary-color);
-  color: rgb(220, 220, 220);
-  padding: 60px 0 !important;
 }
-
-.bg-dark-gray {
+.content-sections > section:nth-of-type(even) {
   background-color: var(--primary-color);
-  padding: 60px 0 !important;
+  color: rgb(220, 220, 220);
+}
+.content-sections > .hero {
+  padding-top: calc(60px + 3em);
 }
 
-.bg-dark {
-  background-color: var(--primary-color) !important;
+.centered-section {
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.offcanvas {
+  display: flex;
+  flex-direction: column;
+  width: 15em !important;
+  background-color: #222;
+  color: #fff;
+}
+
+.offcanvas-brand {
+  width: 100%;
+  padding: 0.2em 0;
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.offcanvas-label {
+  padding: 1em 0 0.2em 1em;
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.offcanvas-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.offcanvas-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 0 1em 2em;
+}
+.offcanvas-link:hover {
+  background-color: #151515;
+  color: #fff;
+}
+
+.offcanvas-actions {
+  margin-top: auto;
 }
 
 .navbar {
   position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
+  inset: 0 0 auto;
   z-index: 99;
-  opacity: 0.95;
   height: 60px;
-  background-color: var(--secondary-color) !important;
+  opacity: 0.95;
+  background-color: var(--secondary-color);
 }
-.navbar .navbar-brand {
-  display: flex;
-  align-items: center;
-  color: #eeeeee;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-.navbar .navbar-brand:hover {
-  color: #ffffff;
+.navbar .logo-img {
+  width: 30px;
+  height: auto;
+  display: block;
+  transition: filter 150ms ease;
 }
 .navbar .navbar-brand:hover .logo-img {
   filter: grayscale(100%) brightness(0.8);
 }
-.navbar .navbar-nav {
-  background-color: var(--secondary-color) !important;
-}
-.navbar .navbar-nav .nav-link {
+.navbar .nav-link {
   color: #f8f9fa;
+  transition: color 150ms ease;
 }
-.navbar .navbar-nav .nav-link:hover {
+.navbar .nav-link:hover {
   color: #d1d5db;
 }
+.navbar .navbar-navigation {
+  display: flex;
+  margin-left: auto;
+}
+.navbar .navbar-navigation .navbar-nav {
+  text-align: end;
+  flex-direction: row;
+  column-gap: 1em;
+}
+.navbar #navbar-color-mode {
+  background-color: transparent !important;
+  border-color: transparent;
+  margin-left: 1em;
+}
+.navbar .navbar-hamburger {
+  margin-left: 1em;
+  margin-bottom: 0.15em;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background-color: transparent;
+}
 
-.logo-img {
-  width: 25px;
-  height: auto;
+.section {
+  padding-bottom: 2em;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  width: fit-content;
+  margin-bottom: 0.4em;
+  text-decoration: none;
+}
+.footer-link i {
+  width: 1.1em;
+  text-align: center;
+}
+
+.footer-logo {
   display: block;
-  margin-left: 10px;
-  transition: filter 0.3s ease;
+  width: 3em;
+  height: 3em;
+  object-fit: contain;
+  margin-left: auto;
+  margin-bottom: 0.5em;
 }
 
-.footer {
-  padding: 1rem 0;
+.footer-map {
+  display: inline-block;
+  padding: 0.45rem 0.8rem;
+  text-decoration: none;
+  background-color: #151515;
+  color: #fff;
+  border-radius: 0.25rem;
+  transition: 150ms ease;
+}
+.footer-map:hover {
+  background-color: #222;
 }
 
-.text-center {
-  padding-top: 2rem;
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.footer-copyright {
+  font-size: 0.875em;
+}
+
+@media (max-width: 767.98px) {
+  .footer-bottom {
+    margin-top: 1.5em;
+  }
+}
+.hero {
+  padding-top: 8em;
+  line-height: 2.5;
+}
+.hero h1 {
+  font-size: 3em;
+}
+
+.thoughts {
+  min-height: 30vh;
+}
+
+.profile-image {
+  flex: 0 0 7.5em;
+  width: 7.5em;
+}
+.profile-image img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 36em) {
+  .profile-image {
+    flex-basis: 5em;
+    width: 5em;
+  }
 }

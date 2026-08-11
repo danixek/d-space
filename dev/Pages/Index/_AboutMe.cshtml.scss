@@ -1,0 +1,14 @@
+.profile-image {
+  flex: 0 0 7.5em;
+  width: 7.5em;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 36em) {
+    flex-basis: 5em;
+    width: 5em;
+  }
+}

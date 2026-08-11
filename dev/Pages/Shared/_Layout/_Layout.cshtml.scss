@@ -1,3 +1,7 @@
 @use "base";
-@use "Navbar.cshtml.scss";
-@use "Footer.cshtml.scss";
+@use "_Offcanvas.cshtml.scss";
+@use "_Navbar.cshtml.scss";
+@use "_Footer.cshtml.scss";
+
+@use "../_Hero.cshtml.scss";
+@use "../_Thoughts.cshtml.scss";

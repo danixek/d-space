@@ -16,25 +16,36 @@
 }
 
 body {
-  --bs-success: rgb(23, 73, 23) !important;
-  margin: 0;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-family: Arial, sans-serif;
   background-color: var(--primary-color);
   color: #f8f9fa;
 }
 
-.bg-light-gray {
-  background-color: var(--secondary-color);
-  color: rgb(220, 220, 220);
-  padding: 60px 0 !important;
+.content-sections {
+  > section {
+    padding: 60px 0;
+    width: 100%;
+
+    &:nth-of-type(odd) {
+      background-color: var(--secondary-color);
+    }
+
+    &:nth-of-type(even) {
+      background-color: var(--primary-color);
+      color: rgb(220, 220, 220);
+    }
+  }
+  > .hero {
+    padding-top: calc(60px + 3em);
+  }
+}
+.centered-section {
+  text-align: center;
+  align-items: center;  
+  display: flex;
 }
 
-.bg-dark-gray {
-  background-color: var(--primary-color);
-  padding: 60px 0 !important;
-}
-
-.bg-dark {
-  background-color: var(--primary-color) !important;
+h2 {
+  font-weight: 600;
 }

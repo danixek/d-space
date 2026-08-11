@@ -1,10 +1,8 @@
 @page "/"
-@model dev.Pages.Index.IndexModel
 @{
-    ViewData["Title"] = "Web Developer";
+    ViewData["Title"] = "Nejen jak. Také proč.";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome on dnx page! :)</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<partial name="_AboutMe" />
+<partial name="_Portfolio" />
+<partial name="_ArticlesCta" />
