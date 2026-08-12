@@ -1,3 +1,30 @@
 .thoughts {
-  min-height: 30vh;
+  height: 12em;
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thoughts-text {
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+  }
+
+  .thoughts-author {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--muted-hover-color);
+  }
+
+  .thoughts-content {
+    opacity: 1;
+    transition: opacity 220ms ease;
+  }
+
+  .thoughts-content.is-fading {
+    opacity: 0;
+  }
 }
