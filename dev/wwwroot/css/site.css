@@ -340,8 +340,43 @@ a:hover {
 }
 .aboutme-actions .aboutme-actions-inner .aboutme-actions-buttons {
   margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
+@media (max-width: 470px) {
+  .aboutme-actions .aboutme-actions-inner {
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 1.75em;
+  }
+  .aboutme-actions .aboutme-actions-buttons {
+    order: 1;
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 0.75rem;
+  }
+  .aboutme-actions .aboutme-actions-buttons .btn-cta {
+    flex: 1;
+    justify-content: center;
+  }
+  .aboutme-actions .aboutme-expand {
+    order: 2;
+    align-self: flex-start;
+    margin-left: 1em;
+  }
+}
+@media (max-width: 400px) {
+  .aboutme-actions .aboutme-actions-buttons {
+    flex-direction: column;
+  }
+  .aboutme-actions .aboutme-actions-buttons .btn-cta {
+    width: 100%;
+  }
+}
 #aboutme-expanded .aboutme-expanded-inner {
   padding-top: 1em;
 }
