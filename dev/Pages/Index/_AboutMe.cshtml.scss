@@ -12,10 +12,8 @@
       border-radius: 1em;
       object-fit: cover;
     }
-  }
 
-  @media (max-width: 36em) {
-    .profile-image {
+    @media (max-width: 36em) {
       .profile-image-img {
         width: 6em;
         height: 6em;
@@ -23,48 +21,45 @@
     }
   }
 }
+
 .aboutme-actions {
-  display: flex;
-  align-items: center;
-  gap: 1.5em;
+  margin-top: 1rem;
 
-  .aboutme-expand {
-    padding: 0;
-    border: 0;
-    background: none;
+  .aboutme-actions-inner {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
 
-    color: inherit;
-    text-decoration: none;
+    .aboutme-expand {
+      padding: 0;
+      border: 0;
+      background: none;
+      color: inherit;
+      cursor: pointer;
+      transition: color 150ms ease;
 
-    cursor: pointer;
-
-    transition: color 150ms ease;
-
-    &:hover {
-      color: var(--muted-hover-color);
+      &:hover {
+        color: var(--muted-hover-color);
+      }
     }
-  }
-  .aboutme-cv {
-    margin-left: auto;
+
+    .aboutme-cv {
+      margin-left: auto;
+    }
   }
 }
 
 #aboutme-expanded {
-  margin-top: 1.25rem;
+  margin-top: 1rem;
 
   .aboutme-expanded-cta-text {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
   }
 
-  .aboutme-actions {
+  .aboutme-expanded-actions {
     display: flex;
     justify-content: flex-start;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-}
-@media (min-width: 768px) {
-  #aboutme-expanded {
-    margin-right: 8em;
+    margin-top: 0.5rem;
+    padding-bottom: 0.25rem;
   }
 }
