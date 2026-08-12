@@ -338,21 +338,18 @@ a:hover {
 .aboutme-actions .aboutme-actions-inner .aboutme-expand:hover {
   color: var(--muted-hover-color);
 }
-.aboutme-actions .aboutme-actions-inner .aboutme-cv {
+.aboutme-actions .aboutme-actions-inner .aboutme-actions-buttons {
   margin-left: auto;
 }
 
-#aboutme-expanded {
-  margin-top: 1rem;
+#aboutme-expanded .aboutme-expanded-inner {
+  padding-top: 1em;
+}
+#aboutme-expanded .aboutme-expanded-inner > h3:first-child {
+  margin-top: 0;
 }
 #aboutme-expanded .aboutme-expanded-cta-text {
-  margin-bottom: 0.5rem;
-}
-#aboutme-expanded .aboutme-expanded-actions {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 0.5rem;
-  padding-bottom: 0.25rem;
+  margin-bottom: 0.5em;
 }
 
 .articles-cta .articles-cta-content {

@@ -11,7 +11,7 @@
                     <img src="~/img/profile.jpg"
                          alt="Daniel Kefurt"
                          class="profile-image-img"
-                         style="width: 8em; height: 8em;" />
+                         style="width: 8em; height: 8em;"/>
                 </div>
 
                 <p>
@@ -37,7 +37,7 @@
         </div>
 
         <!-- Expanded content -->
-        <partial name="_AboutMeExpanded" />
+        <partial name="_AboutMeExpanded"/>
 
         <!-- Actions -->
         <div class="row aboutme-actions">
@@ -54,11 +54,18 @@
                         [ Zobrazit více ]
                     </button>
 
-                    <a href="/CV_Csharp_Daniel-Kefurt.pdf"
-                       class="btn-cta aboutme-cv">
-                        <i class="bi bi-download" aria-hidden="true"></i>
-                        Životopis
-                    </a>
+                    <div class="aboutme-actions-buttons">
+                        <a href="/onboarding-plan_30-60-90.pdf" class="btn-cta me-1">
+                            <i class="bi bi-download" aria-hidden="true"></i>
+                            Onboarding plán
+                        </a>
+
+                        <a href="/CV_Csharp_Daniel-Kefurt.pdf"
+                           class="btn-cta">
+                            <i class="bi bi-download" aria-hidden="true"></i>
+                            Životopis
+                        </a>
+                    </div>
 
                 </div>
 

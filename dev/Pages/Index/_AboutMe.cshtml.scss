@@ -43,23 +43,22 @@
       }
     }
 
-    .aboutme-cv {
+    .aboutme-actions-buttons {
       margin-left: auto;
     }
   }
 }
 
 #aboutme-expanded {
-  margin-top: 1rem;
+  .aboutme-expanded-inner {
+    padding-top: 1em;
 
-  .aboutme-expanded-cta-text {
-    margin-bottom: 0.5rem;
+    > h3:first-child {
+      margin-top: 0;
+    }
   }
 
-  .aboutme-expanded-actions {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 0.5rem;
-    padding-bottom: 0.25rem;
+  .aboutme-expanded-cta-text {
+    margin-bottom: 0.5em;
   }
 }
