@@ -3,6 +3,9 @@
   --secondary-color: #343a40;
   --gallery-border-color: rgb(60, 60, 60);
   --gallery-background-color: rgb(40, 40, 40);
+  --text-color: #fafafa;
+  --text-hover-color: #d1d5db;
+  --muted-hover-color: #aaa;
 }
 
 .theme-darker {
@@ -17,13 +20,13 @@
 
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background-color: var(--primary-color);
-  color: #f8f9fa;
+  color: var(--text-color);
 }
 
 .content-sections > section {
-  padding: 60px 0;
+  padding: 50px 0;
   width: 100%;
 }
 .content-sections > section:nth-of-type(odd) {
@@ -31,7 +34,6 @@ body {
 }
 .content-sections > section:nth-of-type(even) {
   background-color: var(--primary-color);
-  color: rgb(220, 220, 220);
 }
 .content-sections > .hero {
   padding-top: calc(60px + 3em);
@@ -44,7 +46,18 @@ body {
 }
 
 h2 {
+  font-size: 2rem;
+  line-height: 1.25;
   font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .offcanvas {
@@ -112,11 +125,11 @@ h2 {
   filter: grayscale(100%) brightness(0.8);
 }
 .navbar .nav-link {
-  color: #f8f9fa;
+  color: var(--text-color);
   transition: color 150ms ease;
 }
 .navbar .nav-link:hover {
-  color: #d1d5db;
+  color: var(--text-hover-color);
 }
 .navbar .navbar-navigation {
   display: flex;
@@ -167,19 +180,6 @@ h2 {
   margin-bottom: 0.5em;
 }
 
-.footer-map {
-  display: inline-block;
-  padding: 0.45rem 0.8rem;
-  text-decoration: none;
-  background-color: #151515;
-  color: #fff;
-  border-radius: 0.25rem;
-  transition: 150ms ease;
-}
-.footer-map:hover {
-  background-color: #222;
-}
-
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -208,17 +208,85 @@ h2 {
   min-height: 30vh;
 }
 
-.profile-image {
-  flex: 0 0 7.5em;
-  width: 7.5em;
+.aboutme-preview-content {
+  display: flow-root;
 }
-.profile-image img {
-  width: 100%;
-  height: auto;
+.aboutme-preview-content .profile-image {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+.aboutme-preview-content .profile-image .profile-image-img {
+  display: block;
+  width: 8.6em;
+  height: 8.6em;
+  border-radius: 1em;
+  object-fit: cover;
 }
 @media (max-width: 36em) {
-  .profile-image {
-    flex-basis: 5em;
-    width: 5em;
+  .aboutme-preview-content .profile-image .profile-image-img {
+    width: 6em;
+    height: 6em;
   }
+}
+
+.aboutme-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.aboutme-actions .aboutme-expand {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 150ms ease;
+}
+.aboutme-actions .aboutme-expand:hover {
+  color: var(--muted-hover-color);
+}
+.aboutme-actions .aboutme-cv {
+  margin-left: auto;
+}
+
+.btn-themed {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.btn-themed:hover {
+  background-color: color-mix(in srgb, var(--secondary-color) 85%, black);
+  color: var(--text-hover-color);
+}
+.btn-themed.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-themed.btn-md {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-themed.btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+}
+.btn-themed.dropdown-toggle.show {
+  background-color: color-mix(in srgb, var(--secondary-color) 80%, black);
+  color: #f0e68c;
+}
+.btn-themed .bi {
+  position: relative;
+  right: 5px;
+  margin-right: 0.5em;
 }

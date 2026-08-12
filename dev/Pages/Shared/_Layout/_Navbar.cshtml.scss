@@ -20,11 +20,11 @@
   }
 
   .nav-link {
-    color: #f8f9fa;
+    color: var(--text-color);
     transition: color 150ms ease;
 
     &:hover {
-      color: #d1d5db;
+      color: var(--text-hover-color);
     }
   }
   .navbar-navigation {

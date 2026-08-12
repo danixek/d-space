@@ -1,23 +1,68 @@
 <section id="aboutme">
     <div class="container">
-        <div class="col-8">
+        <!-- Preview -->
+        <div class="aboutme-preview">
+
             <h2>O mně</h2>
-            <p>
-                <strong>Perfekcionismus pro mě není o dokonalosti výsledku, ale o sladění s prioritami týmu a růstu k
-                    samostatnosti.</strong>
-                Díky tomu dokážu přirozeně navázat svůj odborný přehled na směr produktu.
-            </p>
-            <p>
-                Technologie proto nevnímám izolovaně, ale <strong>v kontextu produktu</strong>, uživatele a cíle firmy.
-            </p>
-            <p>
-                Nejblíže mám k <strong>C#/.NET</strong>, zejména <strong>ASP.NET</strong>.
-                Rekvalifikace byla mým vstupem do oboru, <strong>odborný přehled jsem ale rozvíjel i nad její
-                    rámec</strong>.
-            </p>
+
+            <div class="aboutme-preview-content">
+
+                <div class="profile-image">
+                    <img src="~/img/profile.jpg"
+                         alt="Daniel Kefurt"
+                         class="profile-image-img" />
+                </div>
+
+                <p>
+                    <strong>
+                        Perfekcionismus pro mě není o dokonalosti výsledku,
+                        ale o sladění s prioritami týmu a růstu k samostatnosti.
+                    </strong>
+                    Díky tomu dokážu přirozeně navázat svůj odborný přehled
+                    na směr produktu. Technologie proto nevnímám izolovaně,
+                    ale <strong>v kontextu produktu</strong>,
+                    uživatele a cíle firmy.
+                </p>
+
+                <p>
+                    Nejblíže mám k <strong>C#/.NET</strong>,
+                    zejména <strong>ASP.NET</strong>.
+                    Rekvalifikace byla mým vstupem do oboru,
+                    <strong>odborný přehled jsem ale rozvíjel i nad její rámec</strong>.
+                </p>
+
+            </div>
+
         </div>
-        <div class="profile-image">
-            <img src="img/profile.jpg" width="4em"/>
+
+        <!-- Expanded content -->
+        <partial name="_AboutMeExpanded" />
+
+        <!-- Actions -->
+        <div class="row aboutme-actions">
+            <div class="col-12">
+
+                <div class="aboutme-actions">
+
+                    <button type="button"
+                            class="aboutme-expand"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#aboutme-expanded"
+                            aria-expanded="false"
+                            aria-controls="aboutme-expanded">
+                        Zobrazit více
+                    </button>
+
+                    <a href="/CV_Csharp_Daniel-Kefurt.pdf"
+                       class="btn-themed aboutme-cv">
+                        <i class="bi bi-download" aria-hidden="true"></i>
+                        Životopis
+                    </a>
+
+                </div>
+
+            </div>
         </div>
+
     </div>
 </section>

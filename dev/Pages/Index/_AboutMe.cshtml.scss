@@ -1,14 +1,50 @@
-.profile-image {
-  flex: 0 0 7.5em;
-  width: 7.5em;
+.aboutme-preview-content {
+  display: flow-root;
 
-  img {
-    width: 100%;
-    height: auto;
+  .profile-image {
+    float: right;
+    margin: 0 0 1em 1em;
+
+    .profile-image-img {
+      display: block;
+      width: 8.6em;
+      height: 8.6em;
+      border-radius: 1em;
+      object-fit: cover;
+    }
   }
 
   @media (max-width: 36em) {
-    flex-basis: 5em;
-    width: 5em;
+    .profile-image {
+      .profile-image-img {
+        width: 6em;
+        height: 6em;
+      }
+    }
+  }
+}
+.aboutme-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+
+  .aboutme-expand {
+    padding: 0;
+    border: 0;
+    background: none;
+
+    color: inherit;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: color 150ms ease;
+
+    &:hover {
+      color: var(--muted-hover-color);
+    }
+  }
+  .aboutme-cv {
+    margin-left: auto;
   }
 }
