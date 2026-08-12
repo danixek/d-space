@@ -91,3 +91,11 @@ p {
   margin-bottom: 0.75rem;
   line-height: 1.55;
 }
+a {
+  color: var(--text-color);
+  transition: color 150ms ease;
+  
+  &:hover {
+    color: var(--text-hover-color);
+  }
+}
