@@ -1,57 +1,31 @@
-.btn-themed {
+@mixin button-base {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
 
-  padding: 10px 20px;
+  padding: 0.5rem 1rem;
 
-  background-color: var(--surface-color);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
   text-decoration: none;
-  border: none;
+
+  border: 1px solid transparent;
   border-radius: 6px;
 
-  color: var(--text-color);
   font-size: 1rem;
   font-weight: 600;
 
   cursor: pointer;
 
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
-
   transition:
-          background-color 0.2s ease,
-          color 0.2s ease;
+          background-color 150ms ease,
+          border-color 150ms ease,
+          color 150ms ease;
 
   &:hover {
-    background-color: color-mix(
-            in srgb,
-            var(--surface-color) 85%,
-            black
-    );
+    background-color: var(--button-hover-color);
+
     color: var(--text-hover-color);
-  }
-
-  &.btn-sm {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
-  }
-
-  &.btn-md {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-  }
-
-  &.btn-lg {
-    padding: 0.75rem 1.5rem;
-    font-size: 1.25rem;
-  }
-
-  &.dropdown-toggle.show {
-    background-color: color-mix(
-            in srgb,
-            var(--surface-color) 80%,
-            black
-    );
-    color: #f0e68c;
   }
 
   .bi {
@@ -59,4 +33,67 @@
     right: 5px;
     margin-right: 0.5em;
   }
+}
+
+@mixin dropdown-active {
+  background-color: color-mix(
+          in srgb,
+          var(--secondary-color) 80%,
+          var(--primary-color)
+  );
+
+  color: var(--active-color);
+}
+
+.btn-cta {
+  @include button-base;
+
+  box-shadow: 0 2px 3px color-mix(
+          in srgb,
+          var(--primary-color) 78%,
+          black
+  );
+
+  &.dropdown-toggle.show {
+    @include dropdown-active;
+  }
+}
+
+.btn-surface {
+  @include button-base;
+
+  border-color: var(--surface-border-color);
+
+  &:hover {
+    background-color: var(--button-hover-color);
+    border-color: var(--button-surface-hover-border-color);
+  }
+
+  &.dropdown-toggle.show {
+    @include dropdown-active;
+  }
+}
+
+.btn-inverted {
+  background-color: var(--primary-color);
+
+  &:hover {
+    background-color: color-mix(
+            in srgb,
+            var(--primary-color) 86%,
+            var(--secondary-color)
+    );
+  }
+}
+
+// Sizes
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
 }
