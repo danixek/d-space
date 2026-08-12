@@ -4,7 +4,7 @@
 
   padding: 10px 20px;
 
-  background-color: var(--secondary-color);
+  background-color: var(--surface-color);
   text-decoration: none;
   border: none;
   border-radius: 6px;
@@ -24,7 +24,7 @@
   &:hover {
     background-color: color-mix(
             in srgb,
-            var(--secondary-color) 85%,
+            var(--surface-color) 85%,
             black
     );
     color: var(--text-hover-color);
@@ -48,11 +48,12 @@
   &.dropdown-toggle.show {
     background-color: color-mix(
             in srgb,
-            var(--secondary-color) 80%,
+            var(--surface-color) 80%,
             black
     );
     color: #f0e68c;
   }
+
   .bi {
     position: relative;
     right: 5px;

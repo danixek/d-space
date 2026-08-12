@@ -1,7 +1,7 @@
 :root {
   --primary-color: #212529;
   --secondary-color: #343a40;
-  --surface-color: #282828;
+  --surface-color: var(--secondary-color);
   --surface-border-color: #3c3c3c;
   --text-color: #fafafa;
   --text-hover-color: #d1d5db;
@@ -271,7 +271,7 @@ p {
   display: inline-flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: var(--secondary-color);
+  background-color: var(--surface-color);
   text-decoration: none;
   border: none;
   border-radius: 6px;
@@ -283,7 +283,7 @@ p {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 .btn-themed:hover {
-  background-color: color-mix(in srgb, var(--secondary-color) 85%, black);
+  background-color: color-mix(in srgb, var(--surface-color) 85%, black);
   color: var(--text-hover-color);
 }
 .btn-themed.btn-sm {
@@ -299,7 +299,7 @@ p {
   font-size: 1.25rem;
 }
 .btn-themed.dropdown-toggle.show {
-  background-color: color-mix(in srgb, var(--secondary-color) 80%, black);
+  background-color: color-mix(in srgb, var(--surface-color) 80%, black);
   color: #f0e68c;
 }
 .btn-themed .bi {

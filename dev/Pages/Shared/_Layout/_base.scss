@@ -2,7 +2,7 @@
   --primary-color: #212529;
   --secondary-color: #343a40;
 
-  --surface-color: #282828;
+  --surface-color: var(--secondary-color);
   --surface-border-color: #3c3c3c;
 
   --text-color: #fafafa;
