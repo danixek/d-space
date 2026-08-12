@@ -150,8 +150,8 @@ a:hover {
   opacity: 0.95;
   background-color: var(--secondary-color);
 }
-.navbar .navbar-brand {
-  width: 30px;
+.navbar .navbar-brand img {
+  max-width: 30px;
   height: auto;
 }
 .navbar .nav-link {
