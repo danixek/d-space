@@ -27,7 +27,7 @@ Prezentační část projektu je koncipována modulárně díky modernímu Razor
 
 Vizuální stránku nezanedbávám, ale pracuji s ní střídmě a podle role jednotlivých prvků. **Vizuální hierarchii nevnímám jako dekoraci, ale jako nástroj pro řízení pozornosti uživatele.** Výraznost proto neurčuji automaticky barvou nebo velikostí – rozhoduje především účel prvku a jeho dopad.
 
-Velké logo má smysl tam, kde silný brand podporuje důvěru a zapamatovatelnost. **Samotná velikost ale slabý brand nezachrání.** Na mém webu proto používám výraznost střídmě: běžné UI prvky držím kolem radiusu **7px**, zatímco logo dostává více prostoru pro osobitost (**1.6em**). Profilovka používá **1em**, aby působila moderně, ale nepoutala více pozornosti, než odpovídá její roli. Naopak CTA pro stažení CV má uživatele přivést ke konkrétní akci, proto **upoutává vlastní stylizací, nikoliv pouze kontrastní barvou**.
+Velké logo má smysl tam, kde silný brand podporuje důvěru a zapamatovatelnost. **Samotná velikost ale slabý brand nezachrání.** Na mém webu proto používám výraznost střídmě: běžné UI prvky držím kolem radiusu **7px**, zatímco logo dostává více prostoru pro osobitost (**1.6em**). Profilovka používá **1em**, aby působila moderně, ale nepoutala více pozornosti, než odpovídá její roli. Naopak CTA pro stažení CV má uživatele přivést ke konkrétní akci, proto **upoutává vlastní stylizací** (border shadow) **, nikoliv pouze kontrastní barvou**.
 
 Ikony vnímám jako **doprovodný prvek**. Mají podporovat význam obsahu, ne soutěžit s ním o pozornost. **Pokud svou funkci plní i méně výrazná ikona, nemám potřebu ji měnit jen kvůli estetické preferenci.**
 
