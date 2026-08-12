@@ -49,7 +49,7 @@ body {
 
 .content-sections {
   > section {
-    padding: 50px 0;
+    padding: 50px 0 38px;
     width: 100%;
 
     &:nth-of-type(odd) {
@@ -61,7 +61,7 @@ body {
     }
   }
   > .hero {
-    padding-top: calc(60px + 3em);
+    padding-top: calc(50px + 3.75em);
   }
 }
 .centered-section {
@@ -72,24 +72,54 @@ body {
 
 h2 {
   font-size: 2rem;
-  line-height: 1.25;
+  line-height: 1.2;
   font-weight: 600;
   margin-top: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 h3 {
   font-size: 1.25rem;
-  line-height: 1.3;
+  line-height: 1.25;
   font-weight: 600;
-  margin-top: 1.25rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.9rem;
+  margin-bottom: 0.35rem;
 }
 
 p {
   margin-top: 0;
   margin-bottom: 0.75rem;
-  line-height: 1.55;
+  line-height: 1.62;
+}
+
+#aboutme .aboutme-preview-content {
+  line-height: 1.66;
+}
+
+#aboutme .aboutme-preview-content p {
+  margin-bottom: 0.85rem;
+}
+
+#aboutme-expanded {
+  margin-top: 1.25rem;
+  line-height: 1.72;
+}
+
+#aboutme-expanded h3 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+  line-height: 1.28;
+}
+
+#aboutme-expanded p {
+  margin-bottom: 1rem;
+  line-height: 1.72;
+}
+
+#aboutme-expanded p:last-of-type,
+#aboutme .aboutme-preview-content p:last-child {
+  margin-bottom: 0;
 }
 a {
   color: var(--text-color);
