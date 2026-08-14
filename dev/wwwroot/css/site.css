@@ -45,17 +45,20 @@ body {
   filter: grayscale(100%) brightness(0.8);
 }
 
-.content-sections > section {
+section {
   padding: 50px 0 38px;
   width: 100%;
 }
-.content-sections > section:nth-of-type(odd) {
+
+section.section-odd {
   background-color: var(--secondary-color);
 }
-.content-sections > section:nth-of-type(even) {
+
+section.section-even {
   background-color: var(--primary-color);
 }
-.content-sections > .hero {
+
+.hero {
   padding-top: calc(50px + 3.75em);
 }
 
@@ -417,10 +420,6 @@ a:hover {
   cursor: pointer;
   transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
 }
-.btn-cta:hover {
-  background-color: var(--button-hover-color);
-  color: var(--text-hover-color);
-}
 .btn-cta .bi {
   position: relative;
   right: 5px;
@@ -449,10 +448,6 @@ a:hover {
   cursor: pointer;
   transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
 }
-.btn-surface:hover {
-  background-color: var(--button-hover-color);
-  color: var(--text-hover-color);
-}
 .btn-surface .bi {
   position: relative;
   right: 5px;
@@ -461,20 +456,31 @@ a:hover {
 .btn-surface {
   border-color: var(--surface-border-color);
 }
-.btn-surface:hover {
-  background-color: var(--button-hover-color);
-  border-color: var(--button-surface-hover-border-color);
-}
 .btn-surface.dropdown-toggle.show {
   background-color: color-mix(in srgb, var(--secondary-color) 80%, var(--primary-color));
   color: var(--active-color);
 }
 
-.btn-inverted {
-  background-color: var(--primary-color);
+.section-even .btn-cta,
+.section-even .btn-surface {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
 }
-.btn-inverted:hover {
-  background-color: color-mix(in srgb, var(--primary-color) 86%, var(--secondary-color));
+.section-even .btn-cta:hover,
+.section-even .btn-surface:hover {
+  background-color: var(--button-hover-color);
+  color: var(--text-hover-color);
+}
+
+.section-odd .btn-cta,
+.section-odd .btn-surface {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+.section-odd .btn-cta:hover,
+.section-odd .btn-surface:hover {
+  background-color: var(--button-hover-color);
+  border-color: var(--button-surface-hover-border-color);
 }
 
 .btn-sm {

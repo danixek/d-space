@@ -13,23 +13,22 @@
     </head>
 
     <body>
-        <header class="content-sections">
+        <header>
             <partial name="Shared/_Layout/_Navbar"/>
         </header>
         
         <partial name="Shared/_Layout/_Offcanvas" />
     
-        <main role="main" class="content-sections">
+        <main role="main">
             <partial name="Shared/_Hero"/>
             @RenderBody()
         </main>
-    
-        <div class="content-sections">
-            <partial name="Shared/_Layout/_Footer"/>
-        </div>
+        
+        <partial name="Shared/_Layout/_Footer"/>
 
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/section-themes.js" asp-append-version="true" defer></script>
         @await RenderSectionAsync("Scripts", required: false)
     </body>
 </html>

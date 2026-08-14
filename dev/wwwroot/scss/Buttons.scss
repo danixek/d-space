@@ -22,12 +22,6 @@
           border-color 150ms ease,
           color 150ms ease;
 
-  &:hover {
-    background-color: var(--button-hover-color);
-
-    color: var(--text-hover-color);
-  }
-
   .bi {
     position: relative;
     right: 5px;
@@ -64,25 +58,35 @@
 
   border-color: var(--surface-border-color);
 
-  &:hover {
-    background-color: var(--button-hover-color);
-    border-color: var(--button-surface-hover-border-color);
-  }
-
   &.dropdown-toggle.show {
     @include dropdown-active;
   }
 }
 
-.btn-inverted {
-  background-color: var(--primary-color);
+// Colors
+.section-even {
+  .btn-cta,
+  .btn-surface {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
 
-  &:hover {
-    background-color: color-mix(
-            in srgb,
-            var(--primary-color) 86%,
-            var(--secondary-color)
-    );
+    &:hover {
+      background-color: var(--button-hover-color);
+      color: var(--text-hover-color);
+    }
+  }
+}
+
+.section-odd {
+  .btn-cta,
+  .btn-surface {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+
+    &:hover {
+      background-color: var(--button-hover-color);
+      border-color: var(--button-surface-hover-border-color);
+    }
   }
 }
 

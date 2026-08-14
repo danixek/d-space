@@ -37,6 +37,7 @@ body {
   background-color: var(--primary-color);
   color: var(--text-color);
 }
+
 .logo-img {
   display: block;
   object-fit: contain;
@@ -47,26 +48,26 @@ body {
   }
 }
 
-.content-sections {
-  > section {
-    padding: 50px 0 38px;
-    width: 100%;
-
-    &:nth-of-type(odd) {
-      background-color: var(--secondary-color);
-    }
-
-    &:nth-of-type(even) {
-      background-color: var(--primary-color);
-    }
-  }
-  > .hero {
-    padding-top: calc(50px + 3.75em);
-  }
+section {
+  padding: 50px 0 38px;
+  width: 100%;
 }
+
+section.section-odd {
+  background-color: var(--secondary-color);
+}
+
+section.section-even {
+  background-color: var(--primary-color);
+}
+
+.hero {
+  padding-top: calc(50px + 3.75em);
+}
+
 .centered-section {
   text-align: center;
-  align-items: center;  
+  align-items: center;
   display: flex;
 }
 
@@ -121,10 +122,11 @@ p {
 #aboutme .aboutme-preview-content p:last-child {
   margin-bottom: 0;
 }
+
 a {
   color: var(--text-color);
   transition: color 150ms ease;
-  
+
   &:hover {
     color: var(--text-hover-color);
   }
