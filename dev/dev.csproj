@@ -8,6 +8,9 @@
     <ItemGroup>
         <ScssFiles Include="wwwroot\scss\site.scss" />
     </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Pages\Details\" />
+    </ItemGroup>
 
     <Target Name="CompileScss"
             BeforeTargets="Build"

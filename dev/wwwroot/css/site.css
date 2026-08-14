@@ -387,15 +387,15 @@ a:hover {
   margin-bottom: 0.5em;
 }
 
-.articles-cta .articles-cta-content {
+.cta .cta-content {
   margin-inline: auto;
 }
-.articles-cta .articles-cta-content h3 {
+.cta .cta-content h3 {
   font-size: 1.5em;
   font-weight: 600;
   margin-bottom: 0.75em;
 }
-.articles-cta .articles-cta-content h4 {
+.cta .cta-content h4 {
   font-size: 1.125em;
   line-height: 1.4;
   font-weight: 400;
