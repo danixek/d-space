@@ -1,62 +1,59 @@
-<section>
+<section class="gpop">
     <div class="container">
-        <table>
-            <thead>
-            <tr>
-                <th>Typ</th>
-                <th>Co ho nejvíce motivuje</th>
-                <th>Paradox pro firmu / typické uplatnění</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">ST</th>
-                <td>
-                    <strong>Mistrovství v konkrétním programovacím jazyce.</strong>
-                    Baví ho prohlubovat znalosti, studovat dokumentaci a zdokonalovat se v existujícím stacku.
-                </td>
-                <td>
-                    <strong>K jinému jazyku si buduje vztah obtížněji, pokud k němu nevidí vlastní důvod.</strong>
-                    Často dobře funguje v enterprise a legacy prostředí.
-                </td>
-            </tr>
+        <div class="gpop__matrix" role="table" aria-label="GPOP typy">
+            <div class="gpop__head" role="row">
+                <div class="gpop__cell gpop__cell--type" role="columnheader">Typ</div>
+                <div class="gpop__cell" role="columnheader">Motivace</div>
+                <div class="gpop__cell" role="columnheader">Uplatnění</div>
+            </div>
 
-            <tr>
-                <th scope="row">NT</th>
-                <td>
-                    <strong>Odbornost a komplexní problém.</strong>
-                    Motivuje ho hluboké porozumění oboru, architektuře a řešení složitých problémů — i v nezáživném oboru.
-                </td>
-                <td>
-                    <strong>Pro firmu může být mimořádně cenný právě proto, že se dokáže dlouhodobě prohlubovat v jednom oboru.</strong>
-                    Často se uplatňuje jako architekt v produktových a technicky náročných firmách.
-                </td>
-            </tr>
+            <div class="gpop__row" role="row">
+                <div class="gpop__cell gpop__cell--type" role="cell"><span class="gpop__type">ST</span></div>
+                <div class="gpop__cell" role="cell">
+                    <strong>Mistrovství v stacku</strong>
+                    <p>Detailní znalost dokumentace a technologie.</p>
+                </div>
+                <div class="gpop__cell" role="cell">
+                    <strong>Enterprise a zakázkový vývoj</strong>
+                    <p>Silná vazba na známý stack, pomalejší přechod jinam.</p>
+                </div>
+            </div>
 
-            <tr>
-                <th scope="row">SF</th>
-                <td>
-                    <strong>Lidé, atmosféra a uživatelská zkušenost.</strong>
-                    Technologie je především prostředkem k vytvoření dobrého výsledku a prostředí.
-                </td>
-                <td>
-                    <strong>Kvůli dobrému týmu nebo lepší zkušenosti uživatele může ochotně změnit i technologii.</strong>
-                    Často frontend/fullstack a produktové prostředí.
-                </td>
-            </tr>
+            <div class="gpop__row" role="row">
+                <div class="gpop__cell gpop__cell--type" role="cell"><span class="gpop__type">NT</span></div>
+                <div class="gpop__cell" role="cell">
+                    <strong>Odbornost a architektura</strong>
+                    <p>Řešení složitých systémových výzev a domén.</p>
+                </div>
+                <div class="gpop__cell" role="cell">
+                    <strong>Technické produkty a architektura</strong>
+                    <p>Jde do hloubky bez ohledu na atraktivitu oboru.</p>
+                </div>
+            </div>
 
-            <tr>
-                <th scope="row">NF</th>
-                <td>
-                    <strong>Vize, smysl a marketingová značka firmy i produktu.</strong>
-                    Motivuje ho představa, kam produkt směřuje a co má reprezentovat.
-                </td>
-                <td>
-                    <strong>Kvůli vizi nebo brandu může ochotně změnit i technologii.</strong>
-                    Stejně jako SF se může přizpůsobit prostředkům, ale jeho hlavním motorem je strategie; často produktové firmy, včetně architektonických rolí.
-                </td>
-            </tr>
-            </tbody>
-        </table>
+            <div class="gpop__row" role="row">
+                <div class="gpop__cell gpop__cell--type" role="cell"><span class="gpop__type">SF</span></div>
+                <div class="gpop__cell" role="cell">
+                    <strong>Tým, atmosféra a UX</strong>
+                    <p>Příjemné prostředí a hmatatelný dopad na uživatele.</p>
+                </div>
+                <div class="gpop__cell" role="cell">
+                    <strong>Frontend a fullstack</strong>
+                    <p>Ochotně změní technologii kvůli týmu nebo lepšímu UX.</p>
+                </div>
+            </div>
+
+            <div class="gpop__row gpop__row--highlight" role="row">
+                <div class="gpop__cell gpop__cell--type" role="cell"><span class="gpop__type gpop__type--infj">NF <small>INFJ</small></span></div>
+                <div class="gpop__cell" role="cell">
+                    <strong>Vize, smysl a brand</strong>
+                    <p>Ztotožnění s příběhem a identitou produktu.</p>
+                </div>
+                <div class="gpop__cell" role="cell">
+                    <strong>Výrazné produktové firmy</strong>
+                    <p>Mění stack a řeší architekturu, pokud věří vizi.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

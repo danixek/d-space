@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+@{
+    ViewData["Title"] = "Nejen jak. Také proč.";
+    ViewData["Subtitle"] = "INFJ vývojář poháněný <strong>perfekcionismem.</strong>";
+}
 
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="icon" href="~/img/logo/filled/32.ico" type="image/x-icon">
-        <title>Vývojář motivovaný vizí produktu | @ViewData["Title"]</title>
-        <script type="importmap"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    </head>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="~/img/logo/filled/32.ico" type="image/x-icon">
+    <title>Vývojář motivovaný vizí produktu | @ViewData["Title"]</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+</head>
 
-    <body>
-        <header>
-            <partial name="Shared/_Layout/_Navbar"/>
-        </header>
-        
-        <partial name="Shared/_Layout/_Offcanvas" />
-    
-        <main role="main">
-            <partial name="Shared/_Hero"/>
-            @RenderBody()
-        </main>
-        
-        <partial name="Shared/_Layout/_Footer"/>
+<body>
+<header>
+    <partial name="Shared/_Layout/_Navbar"/>
+</header>
 
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/section-themes.js" asp-append-version="true" defer></script>
-        @await RenderSectionAsync("Scripts", required: false)
-    </body>
+<partial name="Shared/_Layout/_Offcanvas"/>
+
+<main role="main">
+    <partial name="Shared/_Hero"/>
+    @RenderBody()
+</main>
+
+<partial name="Shared/_Layout/_Footer"/>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/section-themes.js" asp-append-version="true" defer></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
 </html>
