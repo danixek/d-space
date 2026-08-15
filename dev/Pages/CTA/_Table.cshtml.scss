@@ -60,12 +60,6 @@
     white-space: nowrap;
   }
 
-  .gpop__type small {
-    margin-left: 0.25rem;
-    font-size: 0.72em;
-    color: rgba(255, 255, 255, 0.82);
-  }
-
   strong {
     display: block;
     margin: 0;
@@ -199,10 +193,6 @@
     .gpop__head {
       display: none;
     }
-    // The INFJ label is hidden if the type becomes too wide.
-    .gpop__type--infj small {
-      display: none;
-    }
   }
 
   // =========================================================
@@ -258,11 +248,7 @@
       font-size: 0.9rem;
       line-height: 1.2;
     }
-
-    // Hide the INFJ label if the type becomes too wide.
-    .gpop__type--infj small {
-      display: none;
-    }
+    
   }
 
   // =========================================================

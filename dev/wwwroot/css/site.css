@@ -454,11 +454,6 @@ a:hover {
   line-height: 1;
   white-space: nowrap;
 }
-.gpop .gpop__type small {
-  margin-left: 0.25rem;
-  font-size: 0.72em;
-  color: rgba(255, 255, 255, 0.82);
-}
 .gpop strong {
   display: block;
   margin: 0;
@@ -555,9 +550,6 @@ a:hover {
   .gpop .gpop__head {
     display: none;
   }
-  .gpop .gpop__type--infj small {
-    display: none;
-  }
 }
 @media (max-width: 575.98px) {
   .gpop .container {
@@ -594,9 +586,6 @@ a:hover {
   .gpop .gpop__cell strong {
     font-size: 0.9rem;
     line-height: 1.2;
-  }
-  .gpop .gpop__type--infj small {
-    display: none;
   }
 }
 @media (max-width: 399.98px) {
