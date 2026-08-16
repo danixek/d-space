@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace dev.Pages.Index.Components;
+namespace d;
 
 public class _Portfolio : PageModel
 {
