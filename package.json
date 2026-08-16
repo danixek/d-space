@@ -1,10 +1,10 @@
 {
   "name": "d-space",
   "version": "1.0.0",
-  "description": "> **Web Application Architecture & Digital Space**  \r > Koncept rozšiřitelné aplikace a rozcestníku pod jednotnou brand hlavičkou.",
+  "description": "Koncept rozšiřitelné aplikace a Digitálního prostoru",
   "main": "index.js",
   "scripts": {
-    "scss:build": "dotnet msbuild dev/dev.csproj /t:CompileScss",
+    "scss:build": "dotnet msbuild d-repo/d-repo.csproj /t:CompileScss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
