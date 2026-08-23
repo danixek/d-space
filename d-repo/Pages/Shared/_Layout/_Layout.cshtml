@@ -24,6 +24,31 @@
 <partial name="Shared/_Layout/_Offcanvas"/>
 
 <main role="main">
+    <div class="container position-fixed start-50 translate-middle-x" style="z-index: 1000; top: 62px;">
+        <div class="alert alert-dismissible fade show site-notice"
+             style="background-color: var(--primary-color)"
+             role="alert">
+
+            <div class="d-flex">
+                <div class="site-notice-icon" aria-hidden="true">
+                    <i class="bi bi-exclamation-triangle-fill text-warning"></i>
+                </div>
+
+                <div class="site-notice-content ps-4">
+                    <span>
+                        <strong>Probíhá migrace webu z PHP na .NET.</strong>
+                        <span class="ps-1">Některá data zatím pocházejí ze starší verze.</span>
+                    </span>
+                </div>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="alert"
+                        aria-label="Zavřít">
+                </button>
+            </div>
+        </div>
+    </div>
     <partial name="Shared/_Hero"/>
     @RenderBody()
 </main>
