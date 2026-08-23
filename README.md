@@ -1,41 +1,129 @@
-# [ d ]-space
+# [ d ]-Space
 
 > **Web Application Architecture & Digital Space**  
 > Koncept rozšiřitelné aplikace a rozcestníku pod jednotnou brand hlavičkou.
 
 ---
 
-## 🎯 O projektu & Filosofie
+## 🎯 O projektu
 
-**[ d ]-space** není jen portfolio vývojáře či osobní web, ale koncept rozšiřitelné architektury pod stejnou brand hlavičku – a to nejen vlastními produkčními projekty, ale také selfhostingovými aplikacemi podobné např. Mastodonu či PeerTube.
+**[ d ]-Space** není pouze prezentační web nebo portfolio. Je to koncept
+ekosystému, který propojuje vlastní webové aplikace a externí
+self-hostované služby pod jednotnou vizuální a uživatelskou vrstvou.
 
-Hlavní myšlenkou je vytvořit **decentralizovaný digitální prostor**, který propojuje prezentační vrstvu, vlastní webové aplikace i nezávislé služby do jednoho funkčního a vizuálně konzistentního celku.
+Cílem není vytvořit pouze několik samostatných projektů, ale postupně
+z nich vytvořit **smysluplný celek**, ve kterém mají jednotlivé aplikace
+své místo a mohou spolupracovat.
 
-Prezentační část projektu je koncipována modulárně díky modernímu Razor Pages, které je pro danou situaci vhodnější než klasické MVC. Důraz je kladen na architekturu, udržitelnost kódu a možnost adaptace na nové požadavky. C# a .NET tvoří stabilní páteř systému, zatímco technická vrstva frontendu zůstává plně otevřená – výběr technologií je tak možné kdykoliv upgradovat i na Blazor, TypeScript či Vue.js podle potřeb daného modulu.
+Plánovaný vývoj zahrnuje **globální jednotné přihlášení (SSO)** pro
+jednotlivé služby a další rozvoj **[ d ]-Base** jako centrálního prostředí
+s widgety.
+
+[ d ]-Base původně vznikl jako jednodušší domovská stránka prohlížeče pro ukládání
+a načítání uživatelských preferencí a přihlášení přes Google. Další vývoj
+jej má posunout směrem k vlastní správě účtů, jednotné identitě a
+centrálnímu dashboardu.
+
+Projekt proto postupně rozšiřuji podle toho, **co má smysl pro celý
+ekosystém**, nikoliv pouze podle jednotlivých technologií.
+
+---
+---
+
+## 💡 Proč projekt vzniká
+
+Technologie pro mě nejsou cílem samy o sobě. Nejvíce mě motivuje
+**vize produktu, jeho komplexita a možnost propojit jednotlivé části
+do funkčního celku**.
+
+Právě proto se při vývoji nesoustředím pouze na otázku:
+
+> *„Jak tuto funkci naprogramovat?“*
+
+ale také:
+
+> *„Proč ji vytvářet a jak zapadne do celého systému?“*
+
+Tento přístup ovlivňuje i volbu technologií. Pokud určitá část projektu
+vyžaduje jiný nástroj, považuji za přirozené se jej naučit a použít jej
+tam, kde přináší smysl. Součástí dalšího vývoje [ d ]-Base je proto také
+postupný přepis do **TypeScriptu/Vue.js**.
+
+Projekt mi zároveň umožňuje učit se nové technologie na skutečných
+problémech místo izolovaných cvičení do šuplíku.
 
 ---
 
-## 🛠 Tech Stack & Architektura
+## 🧠 Způsob vývoje
 
-* **Framework:** ASP.NET Core (Razor Pages)
-* **Backend:** C# (.NET 9+)
-* **Styling & UI:** Bootstrap, Custom CSS, zaměření na responzivitu
+Při vývoji se snažím využívat své silné stránky – především **abstraktní
+myšlení, architekturu a hledání souvislostí** – jako prostředek k rozvoji
+oblastí, které pro mě nejsou přirozené.
+
+Novou syntaxi proto nejlépe osvojuji při řešení problému, který má
+architektonický nebo produktový význam. Samotné izolované procvičování
+syntaxe pro mě naopak představuje výrazně slabší motivační prostředí.
+
+U prvních úkolů proto může část motivace nahradit také **esteticky
+uspokojivý výsledek**. Ten poskytuje zpětnou vazbu, na které lze dále
+stavět, než si osvojím potřebnou syntaxi a lokální postupy.
 
 ---
 
-## 🎨 Designové principy (UX)
+## 🎨 Design & UX
 
-Vizuální stránku nezanedbávám, ale pracuji s ní střídmě a podle role jednotlivých prvků. **Vizuální hierarchii nevnímám jako dekoraci, ale jako nástroj pro řízení pozornosti uživatele.** Výraznost proto neurčuji automaticky barvou nebo velikostí – rozhoduje především účel prvku a jeho dopad.
+Vizuální stránku nevnímám pouze jako dekoraci. **Vizuální hierarchie je
+pro mě nástrojem pro řízení pozornosti uživatele.**
 
-Velké logo má smysl tam, kde silný brand podporuje důvěru a zapamatovatelnost. **Samotná velikost ale slabý brand nezachrání.** Na mém webu proto používám výraznost střídmě: běžné UI prvky držím kolem radiusu **7px**, zatímco logo dostává více prostoru pro osobitost (**1.6em**). Profilovka používá **1em**, aby působila moderně, ale nepoutala více pozornosti, než odpovídá její roli. Naopak CTA pro stažení CV má uživatele přivést ke konkrétní akci, proto **upoutává vlastní stylizací** (border shadow) **, nikoliv pouze kontrastní barvou**.
+Výraznost jednotlivých prvků proto neurčuji automaticky velikostí nebo
+barvou. Rozhoduje jejich role a to, jakou akci či informaci mají
+podpořit.
 
-Ikony vnímám jako **doprovodný prvek**. Mají podporovat význam obsahu, ne soutěžit s ním o pozornost. **Pokud svou funkci plní i méně výrazná ikona, nemám potřebu ji měnit jen kvůli estetické preferenci.**
+Logo může být výraznější, protože podporuje identitu brandu. CTA může
+používat vlastní stylizaci, protože má uživatele přivést ke konkrétní
+akci. Naopak ikony používám střídmě, pokud jejich význam funguje i bez
+výrazného vizuálního akcentu.
 
-Stejnou střídmost uplatňuji i při refaktorizaci. **První implementaci toleruji s estetickými nedostatky**, pokud je v danou chvíli důležitější ověřit funkčnost nebo strukturu. Když se ale k dané části vracím kvůli refaktorizaci, **nechci bezdůvodně zachovávat estetický dluh**.
+Stejný princip používám při refaktorizaci. Estetické nedostatky první
+implementace toleruji, pokud je důležitější ověřit funkčnost nebo
+strukturu. Pokud se však k dané části vracím při refaktorizaci,
+považuji za smysluplné odstranit i odpovídající **estetický dluh**.
 
-Stejně jako při náboru přemýšlím nad tím, jak firmu zaujmout co nejefektivněji, považuji za důležité stejnou pozornost věnovat i zákazníkovi. **Refaktorizaci proto nevnímám pouze jako technickou investici.** Pokud do ní firma už vkládá čas a prostředky, dává mi smysl využít tuto příležitost i ke zlepšení prezentace produktu – **v rozsahu odpovídajícím velikosti celé investice**.
+Refaktorizaci proto nevnímám pouze jako technickou investici. Pokud už
+produkt věnuje čas a prostředky změně, může být vhodné využít část této
+investice také ke zlepšení jeho prezentace a UX.
 
-Proto jsem na webu zvolil Segoe UI – jednoduché a dobře čitelné písmo, které nechává pozornost na obsahu a podporuje uživatele v cestě k požadované akci. Věřím, že kvalitní UX lze u juniora do určité míry odvodit i bez explicitního zadání. Data mohou ukázat, kde uživatelé odcházejí, ale sama o sobě nemusí říct, proč odcházejí ani jak je přirozeně dovést dál k cíli.
+---
+
+## 🏗 Architektura
+
+Prezentační část využívá **ASP.NET Core Razor Pages**. Architektura je
+navržena modulárně tak, aby bylo možné jednotlivé části postupně
+rozšiřovat a měnit podle potřeb projektu. Při návrhu uplatňuji princip KISS
+– pro tento typ aplikace je Razor Pages oproti MVC kompaktnější.
+
+**C# a .NET** tvoří současnou backendovou páteř. Frontendová vrstva však
+není považována za pevně danou – technologie je možné měnit podle
+konkrétního účelu jednotlivých modulů.
+
+### Aktuální stack
+
+- **Framework:** ASP.NET Core / Razor Pages
+- **Backend:** C# / .NET 9+
+- **Styling:** Bootstrap, vlastní CSS
+- **Frontend:** postupný rozvoj podle potřeb jednotlivých částí
+- **Plánovaný vývoj:** TypeScript, globální SSO, [ d ]-Base dashboard
+
+---
+
+## 🚧 Plánovaný vývoj
+
+- [ ] Globální jednotné přihlášení (SSO)
+- [ ] Vlastní globální správa uživatelských účtů
+- [ ] Přepis a modernizace [ d ]-Base do TypeScriptu
+- [ ] Rozšíření [ d ]-Base o centrální widgety
+- [ ] Propojení jednotlivých aplikací v rámci ekosystému
+- [ ] Další rozvoj UX a vizuální identity
 
 ---
 
