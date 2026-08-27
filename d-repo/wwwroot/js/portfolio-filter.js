@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
 
     // Trojstavové přepínání (null → true → false → null)

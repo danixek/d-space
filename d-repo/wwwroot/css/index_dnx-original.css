@@ -55,6 +55,7 @@ body {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
     transition: background-color 0.2s ease, color 0.2s ease;
 }
+
 /* Doladění paddingu a font-size dle velikostí, pokud chceš přepsat Bootstrap hodnoty */
 .btn-themed.btn-sm {
     padding: 0.25rem 0.5rem; /* menší padding */
@@ -70,6 +71,7 @@ body {
     padding: 0.75rem 1.5rem; /* větší padding */
     font-size: 1.25rem;
 }
+
 .dropdown-menu-dark {
     min-width: 100%; /* šířka podle tlačítka */
     max-width: none;
@@ -298,6 +300,7 @@ body {
 img[alt] {
     position: relative;
 }
+
 .card div img[alt] {
     border-top-left-radius: 7px !important;
     border-top-right-radius: 7px !important;
@@ -633,7 +636,7 @@ img.img-thumbnail {
     font-weight: bold;
 }
 
-.filter-grid>div {
+.filter-grid > div {
     max-width: 100%;
     box-sizing: border-box;
     margin-top: 10px;
@@ -737,40 +740,47 @@ span.bg-secondary {
     display: none;
     z-index: -15
 }
+
 .endora-panel {
     border-bottom: 1px solid var(--primary-color) !important;
     background: var(--secondary-color) !important;
-    color: rgb(200,200,200);
+    color: rgb(200, 200, 200);
     opacity: 0.95;
     padding: 15px !important;
     gap: 25px !important;
 }
+
 .endora-panel.bottom {
     border-top-right-radius: 7px;
 }
+
 .endora-panel-btn {
     border-radius: 7px !important;
     background: var(--primary-color) !important;
-    color: rgb(250,250,250) !important;
+    color: rgb(250, 250, 250) !important;
 }
+
 .endora-panel-text {
-    color: rgb(200,200,200) !important;
+    color: rgb(200, 200, 200) !important;
 }
 
 .endora-panel-text-span {
-    color: rgb(250,250,250) !important;
+    color: rgb(250, 250, 250) !important;
 }
+
 @media (max-width: 780px) {
     .endora-panel-text {
         font-size: 10px !important;
     }
+
     .endora-panel-img {
         width: 20px;
         height: 20px;
     }
 }
+
 .add-card, .add-card.card {
-    border: dashed 4px rgb(150,150,150);
+    border: dashed 4px rgb(150, 150, 150);
     background-color: transparent !important;
     --bs-card-bg: transparent !important;
     --bs-card-border-color: transparent !important;
@@ -784,6 +794,7 @@ span.bg-secondary {
 
     transition: all .2s ease;
 }
+
 .add-card-content {
     display: flex;
     flex-direction: column;
@@ -796,10 +807,11 @@ span.bg-secondary {
 }
 
 .add-card:hover {
-    background-color: rgba(255,255,255,0.05);
-    border-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.8);
     transform: translateY(-2px);
 }
+
 .project .card .admin-btn-ico {
     width: 24px;
     height: 24px;
@@ -822,16 +834,20 @@ span.bg-secondary {
     visibility: visible;
     opacity: 1;
 }
+
 /* Různé barvy pro edit a delete */
 .project .card .edit-btn, .project .card .pin-btn {
     color: white;
 }
+
 .project .card .edit-btn:hover, .project .card .pin-btn:hover {
     background-color: #363636;
 }
+
 .project .card .delete-btn {
     color: white;
 }
+
 .project .card .delete-btn:hover {
     background-color: #b02a37;
 }

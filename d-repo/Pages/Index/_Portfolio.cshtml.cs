@@ -6,6 +6,5 @@ public class _Portfolio : PageModel
 {
     public void OnGet()
     {
-        
     }
 }

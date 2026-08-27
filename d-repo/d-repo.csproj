@@ -8,17 +8,27 @@
         <AssemblyName>d-Space</AssemblyName>
     </PropertyGroup>
     <ItemGroup>
-        <ScssFiles Include="wwwroot\scss\site.scss" />
+        <ScssFiles Include="wwwroot\scss\site.scss"/>
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Pages\Details\" />
+        <Folder Include="Pages\Details\"/>
+    </ItemGroup>
+    <ItemGroup>
+        <AdditionalFiles Include="Pages\CTA\GPOP\Index.cshtml"/>
+        <AdditionalFiles Include="Pages\CTA\GPOP\_Conclusion.cshtml"/>
+        <AdditionalFiles Include="Pages\CTA\GPOP\_Intro.cshtml"/>
+        <AdditionalFiles Include="Pages\CTA\GPOP\_NF.cshtml"/>
+        <AdditionalFiles Include="Pages\CTA\GPOP\_NT.cshtml"/>
+        <AdditionalFiles Include="Pages\CTA\GPOP\_ST.cshtml"/>
+        <AdditionalFiles Include="Pages\CTA\GPOP\_Table.cshtml"/>
+        <AdditionalFiles Include="Pages\CTA\MyProfile\Index.cshtml"/>
     </ItemGroup>
 
     <Target Name="CompileScss"
             BeforeTargets="Build"
             Inputs="@(ScssFiles)"
             Outputs="@(ScssFiles->'wwwroot\\css\\%(Filename).css')">
-        <Message Text="Kompiluji SCSS soubory..." Importance="high" />
-        <Exec Command="npx sass --no-source-map &quot;%(ScssFiles.Identity)&quot; &quot;wwwroot\css\%(ScssFiles.Filename).css&quot;" />
+        <Message Text="Kompiluji SCSS soubory..." Importance="high"/>
+        <Exec Command="npx sass --no-source-map &quot;%(ScssFiles.Identity)&quot; &quot;wwwroot\css\%(ScssFiles.Filename).css&quot;"/>
     </Target>
 </Project>
