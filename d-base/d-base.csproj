@@ -8,7 +8,19 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <ScssFiles Include="wwwroot\site.scss"/>
+    </ItemGroup>
+
+    <ItemGroup>
         <Folder Include="wwwroot\js\"/>
     </ItemGroup>
+
+    <Target Name="CompileScss"
+            BeforeTargets="Build"
+            Inputs="@(ScssFiles)"
+            Outputs="@(ScssFiles->'wwwroot\\%(Filename).css')">
+        <Message Text="Kompiluji SCSS soubory..." Importance="high"/>
+        <Exec Command="npx sass --no-source-map &quot;%(ScssFiles.Identity)&quot; &quot;wwwroot\%(ScssFiles.Filename).css&quot;"/>
+    </Target>
 
 </Project>

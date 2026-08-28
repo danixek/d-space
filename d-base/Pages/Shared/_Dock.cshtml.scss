@@ -1,0 +1,23 @@
+.dock {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  padding: 6px;
+  position: fixed;
+  margin: auto 0;
+  width: 45px;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  
+  .bottom-buttons {
+    margin-top: auto;
+  }
+  
+  i, img {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.4em 0.1em;
+  }
+}
