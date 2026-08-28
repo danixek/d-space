@@ -8,7 +8,7 @@
         <AssemblyName>d-Space</AssemblyName>
     </PropertyGroup>
     <ItemGroup>
-        <ScssFiles Include="wwwroot\scss\site.scss"/>
+        <ScssFiles Include="wwwroot\site.scss"/>
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Pages\Details\"/>
@@ -17,8 +17,8 @@
     <Target Name="CompileScss"
             BeforeTargets="Build"
             Inputs="@(ScssFiles)"
-            Outputs="@(ScssFiles->'wwwroot\\css\\%(Filename).css')">
+            Outputs="@(ScssFiles->'wwwroot\\%(Filename).css')">
         <Message Text="Kompiluji SCSS soubory..." Importance="high"/>
-        <Exec Command="npx sass --no-source-map &quot;%(ScssFiles.Identity)&quot; &quot;wwwroot\css\%(ScssFiles.Filename).css&quot;"/>
+        <Exec Command="npx sass --no-source-map &quot;%(ScssFiles.Identity)&quot; &quot;wwwroot\%(ScssFiles.Filename).css&quot;"/>
     </Target>
 </Project>
