@@ -1,7 +1,25 @@
-@use "base";
 @use "_Offcanvas.cshtml.scss";
 @use "_Navbar.cshtml.scss";
 @use "_Footer.cshtml.scss";
 
 @use "../_Hero.cshtml.scss";
 @use "../_Thoughts.cshtml.scss";
+
+main > section {
+  width: 100%;
+  padding: 50px 0 38px;
+
+  &:nth-of-type(odd) {
+    background-color: var(--secondary-color);
+  }
+
+  &:nth-of-type(even) {
+    background-color: var(--primary-color);
+  }
+}
+
+.centered-section {
+  text-align: center;
+  align-items: center;
+  display: flex;
+}

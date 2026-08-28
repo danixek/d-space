@@ -107,3 +107,33 @@
     margin-bottom: 0.5em;
   }
 }
+
+#aboutme .aboutme-preview-content {
+  line-height: 1.66;
+}
+
+#aboutme .aboutme-preview-content p {
+  margin-bottom: 0.85rem;
+}
+
+#aboutme-expanded {
+  margin-top: 1.25rem;
+  line-height: 1.72;
+}
+
+#aboutme-expanded h3 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+  line-height: 1.28;
+}
+
+#aboutme-expanded p {
+  margin-bottom: 1rem;
+  line-height: 1.72;
+}
+
+#aboutme-expanded p:last-of-type,
+#aboutme .aboutme-preview-content p:last-child {
+  margin-bottom: 0;
+}
