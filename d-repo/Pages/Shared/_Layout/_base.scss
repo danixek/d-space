@@ -48,17 +48,17 @@ body {
   }
 }
 
-section {
-  padding: 50px 0 38px;
+main > section {
   width: 100%;
-}
+  padding: 50px 0 38px;
 
-section.section-odd {
-  background-color: var(--secondary-color);
-}
+  &:nth-of-type(odd) {
+    background-color: var(--secondary-color);
+  }
 
-section.section-even {
-  background-color: var(--primary-color);
+  &:nth-of-type(even) {
+    background-color: var(--primary-color);
+  }
 }
 
 .hero {

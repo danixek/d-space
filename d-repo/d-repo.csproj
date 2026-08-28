@@ -13,16 +13,6 @@
     <ItemGroup>
         <Folder Include="Pages\Details\"/>
     </ItemGroup>
-    <ItemGroup>
-        <AdditionalFiles Include="Pages\CTA\GPOP\Index.cshtml"/>
-        <AdditionalFiles Include="Pages\CTA\GPOP\_Conclusion.cshtml"/>
-        <AdditionalFiles Include="Pages\CTA\GPOP\_Intro.cshtml"/>
-        <AdditionalFiles Include="Pages\CTA\GPOP\_NF.cshtml"/>
-        <AdditionalFiles Include="Pages\CTA\GPOP\_NT.cshtml"/>
-        <AdditionalFiles Include="Pages\CTA\GPOP\_ST.cshtml"/>
-        <AdditionalFiles Include="Pages\CTA\GPOP\_Table.cshtml"/>
-        <AdditionalFiles Include="Pages\CTA\MyProfile\Index.cshtml"/>
-    </ItemGroup>
 
     <Target Name="CompileScss"
             BeforeTargets="Build"
