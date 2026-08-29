@@ -4,8 +4,7 @@
   "description": "Koncept rozšiřitelné aplikace a Digitálního prostoru",
   "main": "index.js",
   "scripts": {
-    "scss:build": "dotnet msbuild d-repo/d-repo.csproj /t:CompileScss",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scss:build": "dotnet msbuild d-repo/d-repo.csproj /t:CompileScss && dotnet msbuild d-base/d-base.csproj /t:CompileScss"
   },
   "keywords": [],
   "author": "",
