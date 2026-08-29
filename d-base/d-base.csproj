@@ -15,35 +15,8 @@
         <Folder Include="wwwroot\js\"/>
     </ItemGroup>
 
-    <ItemGroup>
-      <None Update="Properties\PublishProfiles\Publish.pubxml">
-        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        <CopyToPublishDirectory>Never</CopyToPublishDirectory>
-        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      </None>
-      <None Update="Properties\PublishProfiles\Publish.pubxml.template">
-        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        <CopyToPublishDirectory>Never</CopyToPublishDirectory>
-        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      </None>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Content Include="Properties\PublishProfiles\site88139-WebDeploy.pubxml.user" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <_ContentIncludedByDefault Remove="wwwroot\logo\120.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\logo\570.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\logo\60.png" />
-    </ItemGroup>
-
-    <Target Name="CompileScss"
-            BeforeTargets="Build"
-            Inputs="@(ScssFiles)"
-            Outputs="@(ScssFiles->'wwwroot\\%(Filename).css')">
-        <Message Text="Kompiluji SCSS soubory..." Importance="high"/>
-        <Exec Command="npx sass --no-source-map &quot;%(ScssFiles.Identity)&quot; &quot;wwwroot\%(ScssFiles.Filename).css&quot;"/>
+    <Target Name="CompileScss" BeforeTargets="Build">
+        <Exec Command="npx sass --no-source-map &quot;wwwroot\site.scss&quot; &quot;wwwroot\site.css&quot;" />
     </Target>
 
 </Project>
