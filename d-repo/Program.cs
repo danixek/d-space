@@ -28,7 +28,7 @@ app.UseStaticFiles();
 app.UseStaticFiles(new StaticFileOptions
 {
     FileProvider = new PhysicalFileProvider(
-        Path.Combine(builder.Environment.ContentRootPath, "../assets")),
+        Path.Combine(builder.Environment.ContentRootPath, "assets")),
     RequestPath = "/assets"
 });
 

@@ -14,6 +14,12 @@
     <ItemGroup>
         <Folder Include="wwwroot\js\"/>
     </ItemGroup>
+    <ItemGroup>
+        <Content Include="../assets/**/*"
+                 Link="assets/%(RecursiveDir)%(Filename)%(Extension)"
+                 CopyToOutputDirectory="PreserveNewest"
+                 CopyToPublishDirectory="PreserveNewest" />
+    </ItemGroup>
 
     <Target Name="CompileScss" BeforeTargets="Build">
         <Exec Command="npx sass --no-source-map &quot;wwwroot\site.scss&quot; &quot;wwwroot\site.css&quot;" />
