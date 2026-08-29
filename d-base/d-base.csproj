@@ -32,6 +32,12 @@
       <Content Include="Properties\PublishProfiles\site88139-WebDeploy.pubxml.user" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\logo\120.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\logo\570.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\logo\60.png" />
+    </ItemGroup>
+
     <Target Name="CompileScss"
             BeforeTargets="Build"
             Inputs="@(ScssFiles)"
