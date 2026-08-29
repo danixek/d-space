@@ -15,6 +15,23 @@
         <Folder Include="wwwroot\js\"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Properties\PublishProfiles\Publish.pubxml">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+        <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </None>
+      <None Update="Properties\PublishProfiles\Publish.pubxml.template">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+        <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Properties\PublishProfiles\site88139-WebDeploy.pubxml.user" />
+    </ItemGroup>
+
     <Target Name="CompileScss"
             BeforeTargets="Build"
             Inputs="@(ScssFiles)"
