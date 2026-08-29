@@ -2,6 +2,11 @@ body {
   background-color: var(--primary-color);
 }
 
+main {
+  margin-left: 45px;
+  padding: 0 2em;
+}
+
 .dock {
   display: flex;
   flex-direction: column;
@@ -22,6 +27,13 @@ body {
   width: 100%;
   text-align: center;
   padding: 0.4em 0.1em;
+}
+
+.search {
+  margin: 10em;
+}
+.search img {
+  margin-bottom: 2.5em;
 }
 
 :root {
